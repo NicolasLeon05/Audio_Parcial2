@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A9D3E2AE-07E9-4476-8A21-C008F4FA6B13}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{A9D3E2AE-07E9-4476-8A21-C008F4FA6B13}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A9D3E2AE-07E9-4476-8A21-C008F4FA6B13}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="main" ID="{3EE4F7C2-33C4-4C33-8A96-96DD7D338624}">
+					<ObjectInclusionList>
+						<ObjectRef Name="CrouchEndEvent" ID="{5EF1B891-E71B-42CC-B2F6-557DA30556D8}" WorkUnitID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LandEvent" ID="{1952488B-61BC-4A72-8645-FD08D2E48268}" WorkUnitID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="JumpEvent" ID="{DE767826-D80D-4DCE-BE53-BFDD7516F655}" WorkUnitID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CrouchStartEvent" ID="{B8CFBBF8-2E6C-4FB5-A58E-4F7979EA1A71}" WorkUnitID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
