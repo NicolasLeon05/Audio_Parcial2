@@ -3,50 +3,109 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="JumpEvent" ID="{DE767826-D80D-4DCE-BE53-BFDD7516F655}">
+				<Event Name="StartEvent" ID="{96873340-ED12-480A-BBD1-DE0ED72389B6}">
 					<ChildrenList>
-						<Action Name="" ID="{9BE46387-278D-4086-B170-6EA9661589A2}" ShortID="451133183">
+						<Action Name="" ID="{C383E550-94BC-4CD1-8235-A020F0AAE014}" ShortID="995089064">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Jump" ID="{7CC30E5B-CCD4-4099-AC14-1720D30C45AB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+									<ObjectRef Name="Ambient" ID="{FF71B490-71C8-4739-AFCD-F7C29785C2ED}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FF152C4B-206F-47FE-9B5D-91D236B7ECFF}" ShortID="217436048">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C6589241-525D-4ADA-9791-99C0E1728D75}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambient" ID="{FF71B490-71C8-4739-AFCD-F7C29785C2ED}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="CrouchStartEvent" ID="{B8CFBBF8-2E6C-4FB5-A58E-4F7979EA1A71}">
+				<Event Name="BallRebound" ID="{8BD836D2-76C3-4E1A-9395-61F979B6EE58}">
 					<ChildrenList>
-						<Action Name="" ID="{C23E81B3-745C-48DA-93D1-DBDC5EB73F90}" ShortID="678086770">
+						<Action Name="" ID="{6AD59839-5A49-48B7-B512-CB01379F10D7}" ShortID="394158040">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CrouchStart" ID="{644B7E9D-28F6-43F0-B6FA-FD984B9697DB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+									<ObjectRef Name="BallRebound" ID="{D705DCF1-5738-4809-A934-B63AFE688E92}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="CrouchEndEvent" ID="{5EF1B891-E71B-42CC-B2F6-557DA30556D8}">
+				<Folder Name="Player" ID="{46ADCEB5-EBEF-4880-BF55-CF3BD56744B6}" ShortID="773367071">
 					<ChildrenList>
-						<Action Name="" ID="{737AE1D7-F7B3-4CFE-96CC-CCD408469B19}" ShortID="57536673">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Crouch end" ID="{7488558E-FAC5-4E14-84A6-9697D2C160E5}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="JumpEvent" ID="{DE767826-D80D-4DCE-BE53-BFDD7516F655}">
+							<ChildrenList>
+								<Action Name="" ID="{9BE46387-278D-4086-B170-6EA9661589A2}" ShortID="451133183">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{7CC30E5B-CCD4-4099-AC14-1720D30C45AB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LandEvent" ID="{1952488B-61BC-4A72-8645-FD08D2E48268}">
+							<ChildrenList>
+								<Action Name="" ID="{497EFC7F-90BA-40F0-A2F8-7043DD5E003E}" ShortID="89371448">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{E1B93002-1953-41B4-8A29-9642303AD50C}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StepsEvent" ID="{D447FA64-F995-409F-B81D-045F0DC98ED2}">
+							<ChildrenList>
+								<Action Name="" ID="{31C77801-1461-41DF-81BC-ADBD666B9C5C}" ShortID="40421243">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{045876B4-3DE9-4919-B7E4-1FF51A8EFFF9}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CrouchEndEvent" ID="{5EF1B891-E71B-42CC-B2F6-557DA30556D8}">
+							<ChildrenList>
+								<Action Name="" ID="{737AE1D7-F7B3-4CFE-96CC-CCD408469B19}" ShortID="57536673">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crouch end" ID="{7488558E-FAC5-4E14-84A6-9697D2C160E5}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CrouchStartEvent" ID="{B8CFBBF8-2E6C-4FB5-A58E-4F7979EA1A71}">
+							<ChildrenList>
+								<Action Name="" ID="{C23E81B3-745C-48DA-93D1-DBDC5EB73F90}" ShortID="678086770">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrouchStart" ID="{644B7E9D-28F6-43F0-B6FA-FD984B9697DB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="LandEvent" ID="{1952488B-61BC-4A72-8645-FD08D2E48268}">
-					<ChildrenList>
-						<Action Name="" ID="{497EFC7F-90BA-40F0-A2F8-7043DD5E003E}" ShortID="89371448">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Landing" ID="{E1B93002-1953-41B4-8A29-9642303AD50C}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
