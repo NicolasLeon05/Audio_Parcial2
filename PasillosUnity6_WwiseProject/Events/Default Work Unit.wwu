@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D4B7DF9E-0200-4521-BB7C-6330C23CF303}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="JumpEvent" ID="{DE767826-D80D-4DCE-BE53-BFDD7516F655}">
+					<ChildrenList>
+						<Action Name="" ID="{9BE46387-278D-4086-B170-6EA9661589A2}" ShortID="451133183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{7CC30E5B-CCD4-4099-AC14-1720D30C45AB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CrouchStartEvent" ID="{B8CFBBF8-2E6C-4FB5-A58E-4F7979EA1A71}">
+					<ChildrenList>
+						<Action Name="" ID="{C23E81B3-745C-48DA-93D1-DBDC5EB73F90}" ShortID="678086770">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrouchStart" ID="{644B7E9D-28F6-43F0-B6FA-FD984B9697DB}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CrouchEndEvent" ID="{5EF1B891-E71B-42CC-B2F6-557DA30556D8}">
+					<ChildrenList>
+						<Action Name="" ID="{737AE1D7-F7B3-4CFE-96CC-CCD408469B19}" ShortID="57536673">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crouch end" ID="{7488558E-FAC5-4E14-84A6-9697D2C160E5}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LandEvent" ID="{1952488B-61BC-4A72-8645-FD08D2E48268}">
+					<ChildrenList>
+						<Action Name="" ID="{497EFC7F-90BA-40F0-A2F8-7043DD5E003E}" ShortID="89371448">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Landing" ID="{E1B93002-1953-41B4-8A29-9642303AD50C}" WorkUnitID="{57EAE935-A90E-40F1-8314-523C92F388F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

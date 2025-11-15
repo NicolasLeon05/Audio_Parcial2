@@ -1,6 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{57EAE935-A90E-40F1-8314-523C92F388F7}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{57EAE935-A90E-40F1-8314-523C92F388F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{57EAE935-A90E-40F1-8314-523C92F388F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Steps" ID="{045876B4-3DE9-4919-B7E4-1FF51A8EFFF9}" ShortID="183126962">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Steps" ID="{F9688DDE-0B62-42FE-9AAE-304122F25D39}">
+							<Language>SFX</Language>
+							<AudioFile>Steps.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="116495377"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Steps" ID="{F9688DDE-0B62-42FE-9AAE-304122F25D39}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="CrouchStart" ID="{644B7E9D-28F6-43F0-B6FA-FD984B9697DB}" ShortID="378362754">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Crouch start 1" ID="{DA2BED05-1363-491A-9FC9-A91B6998BF36}" ShortID="995553459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch start 1" ID="{7ECDD011-BADE-42D1-BFD4-3D28EB01B1E4}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch start 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="211054877"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch start 1" ID="{7ECDD011-BADE-42D1-BFD4-3D28EB01B1E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Crouch start 3" ID="{5B709554-10F7-4DDF-B2A4-F5985E403979}" ShortID="379873135">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch start 3" ID="{861FC1B8-40C7-4F6F-8611-D711760E93AB}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch start 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="32262126"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch start 3" ID="{861FC1B8-40C7-4F6F-8611-D711760E93AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Crouch start 2" ID="{5AF7FF55-AAC0-4077-9755-524489598AE4}" ShortID="446269568">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch start 2" ID="{6346857D-70AB-4768-A054-7942625D9B77}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch start 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="262499215"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch start 2" ID="{6346857D-70AB-4768-A054-7942625D9B77}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Crouch end" ID="{7488558E-FAC5-4E14-84A6-9697D2C160E5}" ShortID="431341498">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Crouch end 3" ID="{9FB270CF-D108-4F95-BDF7-FCCBA997FF84}" ShortID="289353332">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch end 3" ID="{49B085EA-01AD-4140-9203-031ECC53301D}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch end 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="246441356"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch end 3" ID="{49B085EA-01AD-4140-9203-031ECC53301D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Crouch end 2" ID="{169ACC2F-D64C-429B-8BB5-AAF79E6C56AA}" ShortID="358971077">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch end 2" ID="{7CED6075-0FA3-4B91-BA5F-6A88A48CC624}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch end 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="229093489"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch end 2" ID="{7CED6075-0FA3-4B91-BA5F-6A88A48CC624}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Crouch end 1" ID="{4AC60766-98CA-4D9C-A8BE-122FE5A6EA79}" ShortID="295581944">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crouch end 1" ID="{74AE9E45-DB44-4445-A4D7-7F2BCD6D7180}">
+									<Language>SFX</Language>
+									<AudioFile>Crouch end 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="886490652"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crouch end 1" ID="{74AE9E45-DB44-4445-A4D7-7F2BCD6D7180}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Jump" ID="{7CC30E5B-CCD4-4099-AC14-1720D30C45AB}" ShortID="712326247">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Jump 2" ID="{FB2FCA8A-41E7-4919-AB71-9511DBC4F9B4}" ShortID="66220522">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Jump 2" ID="{7213C09E-F84F-477B-942F-44F538D091ED}">
+									<Language>SFX</Language>
+									<AudioFile>Jump 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="418070311"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Jump 2" ID="{7213C09E-F84F-477B-942F-44F538D091ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Jump 3" ID="{19E7B219-7102-40F1-AB6E-6FB0CFCE99D3}" ShortID="202738397">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Jump 3" ID="{2018438E-4D42-4529-B4A2-26D582FF1D94}">
+									<Language>SFX</Language>
+									<AudioFile>Jump 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1014436989"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Jump 3" ID="{2018438E-4D42-4529-B4A2-26D582FF1D94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Jump 1" ID="{DD6493E7-2AA0-4741-9963-27606BC230FD}" ShortID="104862436">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Jump 1" ID="{E9871387-EF34-47F0-A2A1-BF3BA218765F}">
+									<Language>SFX</Language>
+									<AudioFile>Jump 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="282061986"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Jump 1" ID="{E9871387-EF34-47F0-A2A1-BF3BA218765F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Landing" ID="{E1B93002-1953-41B4-8A29-9642303AD50C}" ShortID="420106319">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Landing 1" ID="{C12BA555-686A-48E3-AF50-4A355CCADF50}" ShortID="719241228">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Landing 1" ID="{8355489A-76B4-4391-8B0E-142DDEBCA9B4}">
+									<Language>SFX</Language>
+									<AudioFile>Landing 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="374211705"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Landing 1" ID="{8355489A-76B4-4391-8B0E-142DDEBCA9B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Landing 2" ID="{1A7948FD-055B-4CF4-BCDD-C8DC99F4817C}" ShortID="92802398">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Landing 2" ID="{E429382B-0442-42F7-B427-C66384F6492B}">
+									<Language>SFX</Language>
+									<AudioFile>Landing 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="868026235"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Landing 2" ID="{E429382B-0442-42F7-B427-C66384F6492B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Landing 3" ID="{9EE49B94-9D46-48F7-8460-E871604248CA}" ShortID="296143771">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BEED9F80-2E6B-4D08-8224-665F244680AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{55E5B614-1C6C-430B-9ACF-A6325C30B300}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Landing 3" ID="{D756EBF8-6A11-483E-A3E5-FA44459235BB}">
+									<Language>SFX</Language>
+									<AudioFile>Landing 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="725760754"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Landing 3" ID="{D756EBF8-6A11-483E-A3E5-FA44459235BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
